@@ -1,0 +1,4 @@
+# NetBeans'in otomatik ürettiği derleme klasörleri
+build/
+nbproject/private/
+dist/

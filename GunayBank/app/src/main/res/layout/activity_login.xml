@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#003494"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- LOGO -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="4dp"
+            android:text="Günay Bank"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:text="İnternet Şubesi"
+            android:textColor="#A0BFFF"
+            android:textSize="14sp" />
+
+        <!-- GİRİŞ KARTI -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="24dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Güvenli Giriş"
+                android:textColor="#004794"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Müşteri No -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Müşteri / T.C. Kimlik No:"
+                android:textColor="#444466"
+                android:textSize="13sp"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/etMusteriNo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/et_border"
+                android:hint="Müşteri numaranızı giriniz"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Şifre -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="İnternet Şube Şifresi"
+                android:textColor="#444466"
+                android:textSize="13sp"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/etSifre"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/et_border"
+                android:hint="Şifrenizi giriniz"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Captcha -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Güvenlik Kodu"
+                android:textColor="#444466"
+                android:textSize="13sp"
+                android:layout_marginBottom="6dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tvCaptcha"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="#EEF2FF"
+                    android:gravity="center"
+                    android:letterSpacing="0.2"
+                    android:textColor="#1E3C8C"
+                    android:textSize="22sp"
+                    android:textStyle="bold|italic"
+                    android:fontFamily="monospace"/>
+
+                <TextView
+                    android:id="@+id/tvYenileCaptcha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="↻ Yenile"
+                    android:textColor="#0099E0"
+                    android:textSize="14sp"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etCaptcha"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/et_border"
+                android:hint="Güvenlik kodunu giriniz"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Butonlar -->
+            <Button
+                android:id="@+id/btnGiris"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="#0099E0"
+                android:text="🔒  Güvenli Giriş"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnKayit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="#004794"
+                android:text="Kayıt Ol"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
