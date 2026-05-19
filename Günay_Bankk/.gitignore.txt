@@ -1,0 +1,6 @@
+target/
+.netbeans_*/
+*.db
+build/
+nbproject/private/
+dist/
